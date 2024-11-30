@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascaria Fogo & Brasa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Configurações gerais */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+header {
+    background-color: #000;
+    color: #f5a623;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    background: linear-gradient(45deg, #ff6600, #a83e32);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5a623;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff4400;
+}
+
+.hero {
+    background-image: url('https://example.com/fogo.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.sobre, .cardapio, .contato {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cardapio .itens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cardapio .item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cardapio .item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ff4400;
+}
+
+footer {
+    background-color: #000;
+    color: #f5a623;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Efeitos especiais */
+h2 {
+    font-size: 2.5em;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6600, #a83e32);
+    bottom: -5px;
+    left: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Fogo & Brasa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>O Melhor Sabor na Brasa</h2>
+            <p>Experimente o verdadeiro churrasco brasileiro, feito com paixão e qualidade incomparável.</p>
+        </section>
+        <section id="sobre" class="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma churrascaria de tradição, unindo o sabor autêntico com um ambiente acolhedor e elegante.</p>
+        </section>
+        <section id="cardapio" class="cardapio">
+            <h2>Nosso Cardápio</h2>
+            <div class="itens">
+                <div class="item">
+                    <h3>Picanha Premium</h3>
+                    <p>Assada ao ponto perfeito, derrete na boca.</p>
+                </div>
+                <div class="item">
+                    <h3>Costela no Fogo Lento</h3>
+                    <p>Carne suculenta com sabor inconfundível.</p>
+                </div>
+                <div class="item">
+                    <h3>Espetinhos Variados</h3>
+                    <p>O melhor para compartilhar com amigos.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p>Endereço: Rua do Sabor, 123 - Centro</p>
+            <p>Telefone: (99) 99999-9999</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Churrascaria Fogo & Brasa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
